@@ -1,0 +1,13 @@
+name: CatAntiCheatPlugin
+main: luohuayu.anticheat.plugin.CatAntiCheat
+version: 1.2.13
+authors: [Luohuayu]
+
+commands:
+  catanticheat:
+    description: All commands of CatAntiCheat
+    usage: /<command>
+    aliases: [cac]
+permissions:
+  catanticheat:
+    default: op

@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = "http://files.minecraftforge.net/maven" }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = "1.2.6"
+group = "luohuayu.anticheat"
+archivesBaseName = "CatAntiCheat"
+
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+    compileJava.options.encoding = 'UTF-8'
+}
+
+minecraft {
+    version = "1.12.2-14.23.5.2768"
+    runDir = "run"
+    mappings = "snapshot_20171003"
+}
+
+dependencies {
+
+}
+
+jar {
+    manifest {
+        attributes 'FMLCorePlugin': 'luohuayu.anticheat.asm.AntiCheatCorePlugin'
+        attributes 'FMLCorePluginContainsFMLMod': 'true'
+    }
+}

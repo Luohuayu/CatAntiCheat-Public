@@ -1,0 +1,49 @@
+# 踢出消息
+kickmessage:
+  error: "反作弊发生错误\n原因: %reason%\n事件编号: %uuid%"
+  violation: "你已被反作弊踢出\n原因: %reason%\n事件编号: %uuid%"
+  banned: "你已被反作弊封禁\n原因: %reason%\n事件编号: %uuid%"
+
+# 超时时间(秒)
+timeout:
+  # 验证反作弊MOD时间
+  handshake: 10
+  # 验证文件时间
+  file: 20
+  # 心跳包时间
+  keepalive: 30
+
+# 定时检测(秒) 设置为0可关闭
+timer:
+  # 文件检测
+  file: 300
+  # 类检测
+  class: 60
+
+# 进服自动截图(秒) (建议根据硬盘空间和玩家数量开启以及设置较长时间)
+auto_screenshot: 0
+
+# 是否封禁尝试绕过反作弊的玩家
+ban_try_bypass: true
+
+# 封禁指令
+ban_command: "ban %player% 反作弊封禁: %reason%(%uuid%)"
+
+# 黑名单类名
+blacklist_class:
+  - net.minecraftxray.a
+  - com.xray.XRay
+  - forgefuck.team.xenobyte.XenoByte
+  - DCVynoTvQwmdpl.DCVynoTvQwmdpl.DCVynoTvQwmdpl.SwpDudG9aHWIpEz7
+
+# 禁止夜视
+disallow_lighting: false
+
+# 禁止透明材质
+disallow_transparent_texture: false
+
+# 忽略重复的MOD
+ignore_duplicate_mods: false
+
+# 忽略无法检测的MOD (很大可能会被绕过检测)
+ignore_uncheck_mods: false

@@ -1,0 +1,16 @@
+/bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+/out
+*.ipr
+*.iws
+*.iml
+/.idea
+/build
+/.gradle
+/eclipse
+/run
+/target
